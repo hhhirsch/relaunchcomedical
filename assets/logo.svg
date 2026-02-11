@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="230" height="48" viewBox="0 0 230 48" fill="none">
+  <rect width="48" height="48" rx="14" fill="#FF7A2F"/>
+  <path d="M15 34V14h9.7c4.8 0 7.3 2 7.3 6 0 2.6-1.2 4.3-3.6 5.1l4.6 8.9h-6.1l-3.9-7.8h-2.3V34H15Zm5.7-12.2h3.2c2 0 3-.8 3-2.3s-1-2.2-3-2.2h-3.2v4.5Z" fill="#081A35"/>
+  <text x="62" y="20" fill="#F5F8FF" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">RELAUNCH CO</text>
+  <text x="62" y="37" fill="#BBCAE6" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="500">MEDICAL</text>
+</svg>
