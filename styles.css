@@ -1,0 +1,418 @@
+:root {
+  --bg: #dfe1e4;
+  --navy: #0c2455;
+  --text: #1f3560;
+  --card-bg: #f4f4f5;
+  --card-border: #c9cfda;
+  --orange: #ff6a00;
+  --orange-btn: #ff971f;
+  --orange-btn-hover: #f18813;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.top-bar {
+  background: var(--navy);
+  color: #fff;
+}
+
+.top-bar-inner {
+  max-width: 1600px;
+  margin: 0 auto;
+  min-height: 68px;
+  padding: 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.top-label {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.top-clients {
+  font-size: 33px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.services-layout {
+  padding: 92px 28px 40px;
+  max-width: 1500px;
+}
+
+h1 {
+  margin: 0 0 24px;
+  color: var(--text);
+  font-size: 58px;
+  line-height: 1.1;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 26px;
+}
+
+.service-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 26px;
+  padding: 26px 28px 22px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(31, 53, 96, 0.07);
+}
+
+.service-card h2 {
+  margin: 0 0 12px;
+  font-size: 47px;
+  color: var(--orange);
+  line-height: 1.1;
+}
+
+.service-card p {
+  margin: 0 auto 18px;
+  max-width: 760px;
+  font-size: 39px;
+  line-height: 1.35;
+}
+
+.service-btn,
+.back-link {
+  display: inline-block;
+  min-width: 220px;
+  padding: 16px 26px;
+  border-radius: 999px;
+  background: var(--orange-btn);
+  color: #fff;
+  text-decoration: none;
+  font-size: 41px;
+  font-weight: 700;
+  line-height: 1;
+  transition: background 0.2s ease;
+}
+
+.service-btn:hover,
+.back-link:hover {
+  background: var(--orange-btn-hover);
+}
+
+.product-main {
+  max-width: 1500px;
+  padding: 92px 28px 50px;
+}
+
+.product-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 26px;
+  padding: 32px;
+  box-shadow: 0 6px 16px rgba(31, 53, 96, 0.07);
+}
+
+.product-card h1 {
+  margin-bottom: 18px;
+}
+
+.product-card p {
+  font-size: 31px;
+  line-height: 1.4;
+  margin: 0 0 12px;
+}
+
+.product-card ul {
+  font-size: 31px;
+  line-height: 1.4;
+  margin: 10px 0 24px 26px;
+}
+
+@media (max-width: 1200px) {
+  .top-label {
+    font-size: 28px;
+  }
+
+  .top-clients {
+    font-size: 22px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .service-card h2 {
+    font-size: 38px;
+  }
+
+  .service-card p,
+  .service-btn,
+  .back-link,
+  .product-card p,
+  .product-card ul {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 760px) {
+  .top-bar-inner {
+    min-height: auto;
+    padding: 10px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .top-clients {
+    white-space: normal;
+  }
+
+  .services-layout,
+  .product-main {
+    padding: 40px 16px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    border-radius: 20px;
+  }
+}
+
+
+.product-kicker {
+  margin: 0;
+  color: var(--orange);
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.product-subline {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 29px;
+  line-height: 1.35;
+}
+
+.product-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.product-columns article {
+  background: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.product-columns h2,
+.related-services h2 {
+  margin: 0 0 12px;
+  color: var(--text);
+  font-size: 30px;
+}
+
+.related-services {
+  margin: 24px 0 18px;
+}
+
+.detail-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.detail-chip {
+  display: inline-block;
+  border: 1px solid var(--card-border);
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 20px;
+  background: #fff;
+}
+
+.detail-chip.is-active {
+  background: #ffefe3;
+  border-color: #ffc78f;
+  color: #b54a00;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .product-kicker {
+    font-size: 18px;
+  }
+
+  .product-subline {
+    font-size: 24px;
+  }
+
+  .product-columns h2,
+  .related-services h2,
+  .detail-chip {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 900px) {
+  .product-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .product-subline {
+    font-size: 22px;
+  }
+}
+
+
+.product-simple h1 {
+  margin-bottom: 18px;
+}
+
+.product-simple p {
+  font-size: 27px;
+  line-height: 1.45;
+  margin: 0 0 14px;
+}
+
+.product-actions {
+  margin-top: 26px;
+}
+
+.cta-button {
+  border: 0;
+  cursor: pointer;
+}
+
+.briefing-dialog {
+  border: 0;
+  border-radius: 18px;
+  padding: 0;
+  width: min(760px, 92vw);
+}
+
+.briefing-dialog::backdrop {
+  background: rgba(12, 36, 85, 0.55);
+}
+
+.dialog-shell {
+  padding: 24px;
+}
+
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.dialog-header h2 {
+  margin: 0;
+  color: var(--text);
+  font-size: 34px;
+}
+
+.dialog-close {
+  border: 0;
+  background: transparent;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.dialog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.dialog-grid label,
+.dialog-textarea {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 18px;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.dialog-grid input,
+.dialog-textarea textarea {
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font: inherit;
+}
+
+.dialog-textarea {
+  margin-top: 12px;
+}
+
+.dialog-actions {
+  margin-top: 18px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 0;
+}
+
+.dialog-primary,
+.dialog-secondary {
+  border: 0;
+  border-radius: 999px;
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.dialog-primary {
+  background: var(--orange-btn);
+  color: #fff;
+}
+
+.dialog-secondary {
+  background: #eceff5;
+  color: var(--text);
+}
+
+@media (max-width: 900px) {
+  .product-simple p {
+    font-size: 22px;
+  }
+
+  .dialog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dialog-header h2 {
+    font-size: 28px;
+  }
+}

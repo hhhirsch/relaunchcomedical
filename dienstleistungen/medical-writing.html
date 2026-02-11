@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical Writing | Relaunch Co Medical</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <div class="top-bar-inner">
+        <span class="top-label">Kunden</span>
+        <span class="top-clients">medac • B.BRAUN • Bionorica • MERCK • medac • B.BRAUN • MERCK</span>
+      </div>
+    </header>
+
+    <main class="product-main">
+      <section class="product-card product-simple">
+        <h1>Medical Writing</h1>
+        <p>Wir erstellen präzise medizinisch-wissenschaftliche Inhalte für Fachkreise, interne Teams und regulatorische Anforderungen – verständlich, korrekt und zielgruppengerecht.</p>
+        <p>
+          Wir begleiten Sie von der ersten Idee über die inhaltliche Ausarbeitung bis zur finalen Umsetzung.
+          Dabei arbeiten wir eng mit Ihrem Team zusammen und sorgen für einen klaren, effizienten Ablauf.
+        </p>
+
+        <div class="product-actions">
+          <button type="button" class="back-link cta-button" data-open-briefing>
+            Briefing Termin vereinbaren
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="briefing-dialog" aria-labelledby="briefing-title">
+      <form method="dialog" class="dialog-shell" data-briefing-form>
+        <header class="dialog-header">
+          <h2 id="briefing-title">Briefing Termin vereinbaren</h2>
+          <button type="submit" class="dialog-close" aria-label="Dialog schließen">✕</button>
+        </header>
+
+        <div class="dialog-grid">
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            E-Mail
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Telefon
+            <input type="tel" name="phone" />
+          </label>
+          <label>
+            Unternehmen
+            <input type="text" name="company" />
+          </label>
+        </div>
+
+        <label class="dialog-textarea">
+          Anliegen
+          <textarea name="message" rows="5" placeholder="Beschreiben Sie kurz Ihr Anliegen..." required></textarea>
+        </label>
+
+        <menu class="dialog-actions">
+          <button type="button" class="dialog-secondary" data-close-briefing>Abbrechen</button>
+          <button type="submit" value="submitted" class="dialog-primary">Anfrage senden</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <script src="../scripts/briefing-dialog.js"></script>
+  </body>
+</html>
