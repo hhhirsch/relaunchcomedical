@@ -1,30 +1,165 @@
 <!doctype html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Relaunch Co Medical</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="top-bar">
-      <div class="top-bar-inner">
-        <span class="top-label">Kunden</span>
-        <span class="top-clients">medac • B.BRAUN • Bionorica • MERCK • medac • B.BRAUN • MERCK</span>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Relaunch Co Medical – Home</title>
+  <meta name="description" content="Dichter an der Medizin. Kreativer in der Kommunikation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header dark-shell">
+    <div class="container nav-wrap">
+      <a class="logo" href="./index.html" aria-label="Startseite">
+        <img src="./assets/logo.svg" alt="Relaunch Co Medical Logo">
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav" class="main-nav">
+        <a href="./index.html" class="active">Home</a>
+        <a href="./agentur.html">Agentur</a>
+        <a href="./referenzen.html">Referenzen</a>
+        <a href="./karriere.html">Karriere</a>
+        <a href="./services.html">Services</a>
+        <a href="./kontakt.html" class="pill-outline">Kontakt</a>
+      </nav>
+    </div>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>Dichter an der Medizin.<br>Kreativer in der <span>Kommunikation.</span></h1>
+        <p>Wir übersetzen komplexe medizinische Inhalte in klare, wirkungsvolle Kommunikation – strategisch, kreativ und stets wissenschaftlich fundiert.</p>
+        <div class="hero-cta-row">
+          <a href="./services.html" class="btn btn-primary">Erfahren Sie mehr</a>
+          <a href="./kontakt.html" class="btn btn-secondary">Kontaktieren Sie uns</a>
+        </div>
+        <div class="kpi-grid" aria-label="Kennzahlen">
+          <article class="kpi-card"><strong>100</strong><span>Topic</span></article>
+          <article class="kpi-card"><strong>100</strong><span>Topic</span></article>
+          <article class="kpi-card"><strong>100</strong><span>Topic</span></article>
+          <article class="kpi-card"><strong>100</strong><span>Topic</span></article>
+        </div>
       </div>
-    </header>
+      <div class="hero-visual" aria-hidden="true"></div>
+    </div>
+    <div class="customer-bar">
+      <div class="container customer-inner">
+        <p>Kunden</p>
+        <div class="customer-logos">
+          <span>MedBrand</span><span>Nova Pharma</span><span>ClinicalX</span><span>BioHealth</span><span>CareOne</span>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    <main class="home-layout">
-      <section class="home-hero" aria-labelledby="home-title">
-        <p class="home-kicker">Relaunch Co Medical</p>
-        <h1 id="home-title">Strategische Medical-Kommunikation für Healthcare-Marken</h1>
-        <p class="home-copy">
-          Wir verbinden wissenschaftliche Präzision mit kreativer Umsetzung – von Medical Writing
-          über Education bis Marketing. Entdecken Sie unser Leistungsportfolio und die passenden
-          Services für Ihr Projekt.
-        </p>
-        <a class="service-btn" href="services.html">Zu unseren Services</a>
-      </section>
-    </main>
-  </body>
+  <main>
+    <section class="section services-section">
+      <div class="container">
+        <h2>Unsere Services</h2>
+        <div class="card-grid three-up">
+          <article class="service-card"><div class="icon-dot"></div><h3>Medical Writing</h3><p>Präzise, evidenzbasierte Inhalte für Fachkreise und Patientenkommunikation.</p><a href="./services.html">Mehr Infos</a></article>
+          <article class="service-card"><div class="icon-dot"></div><h3>Medical Affairs</h3><p>Strategische Begleitung entlang von Launch, Lifecycle und wissenschaftlicher Positionierung.</p><a href="./services.html">Mehr Infos</a></article>
+          <article class="service-card"><div class="icon-dot"></div><h3>Medical Graphics</h3><p>Visualisierung komplexer Daten in verständliche, markenkonforme Assets.</p><a href="./services.html">Mehr Infos</a></article>
+          <article class="service-card"><div class="icon-dot"></div><h3>Medical Education</h3><p>Fortbildungsformate mit didaktischer Klarheit für HCPs und interne Teams.</p><a href="./services.html">Mehr Infos</a></article>
+          <article class="service-card"><div class="icon-dot"></div><h3>Medical Liaison</h3><p>Fachlicher Dialog mit Stakeholdern – strukturiert, compliant und wirksam.</p><a href="./services.html">Mehr Infos</a></article>
+          <article class="service-card"><div class="icon-dot"></div><h3>Medical Marketing</h3><p>Kreative Kampagnen, die medizinische Präzision mit Markenwirkung verbinden.</p><a href="./services.html">Mehr Infos</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section">
+      <div class="container">
+        <h2>So läuft ein Projekt mit uns ab</h2>
+        <div class="process-flow" aria-hidden="true"></div>
+        <div class="card-grid five-up">
+          <article class="process-card"><span>01</span><h3>Kickoff</h3><p>Ziele, Zielgruppen und Scope schärfen.</p></article>
+          <article class="process-card"><span>02</span><h3>Analyse</h3><p>Medical Insights und Datenbasis strukturieren.</p></article>
+          <article class="process-card"><span>03</span><h3>Konzept</h3><p>Storyline, Kanäle und Assets planen.</p></article>
+          <article class="process-card"><span>04</span><h3>Produktion</h3><p>Content, Design und QA abgestimmt umsetzen.</p></article>
+          <article class="process-card"><span>05</span><h3>Rollout</h3><p>Publikation, Monitoring und Optimierung.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-dark">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Unsere bisherigen Projekte.</h2>
+            <p>Ein Einblick in ausgewählte Cases aus Medical Communication, Education und Multichannel.</p>
+          </div>
+          <a href="./referenzen.html" class="btn btn-secondary">Alle Projekte im Überblick</a>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-btn" data-slider-target="projects-slider" data-direction="prev" aria-label="Vorherige Projekte">←</button>
+          <button class="slider-btn" data-slider-target="projects-slider" data-direction="next" aria-label="Nächste Projekte">→</button>
+        </div>
+        <div id="projects-slider" class="slider-track">
+          <article class="project-card"><div class="card-image"></div><h3>Launch Kampagne Rare Disease</h3><p>360°-Kommunikation für HCPs in DACH.</p><a href="./referenzen.html">Mehr Infos</a></article>
+          <article class="project-card"><div class="card-image"></div><h3>Advisory Board Toolkit</h3><p>Modulares Materialpaket für wissenschaftliche Dialoge.</p><a href="./referenzen.html">Mehr Infos</a></article>
+          <article class="project-card"><div class="card-image"></div><h3>Medical Education Hub</h3><p>Digitale Lernreise inklusive CME-naher Formate.</p><a href="./referenzen.html">Mehr Infos</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section blog-section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Unser Expertenblog</h2>
+          <a href="./referenzen.html" class="btn btn-secondary">Zur Bibliothek</a>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-btn" data-slider-target="blog-slider" data-direction="prev" aria-label="Vorherige Beiträge">←</button>
+          <button class="slider-btn" data-slider-target="blog-slider" data-direction="next" aria-label="Nächste Beiträge">→</button>
+        </div>
+        <div id="blog-slider" class="slider-track blog-track">
+          <article class="blog-card"><span class="date-badge">20.09.2025</span><h3>Health Literacy als Kommunikationschance</h3><p>Warum einfache Sprache medizinische Inhalte stärker macht.</p></article>
+          <article class="blog-card"><span class="date-badge">20.09.2025</span><h3>Von Daten zu Storytelling</h3><p>So entstehen evidenzbasierte Narrative mit Relevanz.</p></article>
+          <article class="blog-card"><span class="date-badge">20.09.2025</span><h3>MLR effizient gestalten</h3><p>Praktische Tipps für schnellere Freigaben im Alltag.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-strip">
+      <div class="container team-inner">
+        <h2>Teil des Teams</h2>
+        <a href="./karriere.html" class="btn btn-primary">Unsere Stellenangebote</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>WEBSITE</h3>
+        <ul>
+          <li><a href="./index.html">Home</a></li><li><a href="./agentur.html">Agentur</a></li><li><a href="./referenzen.html">Referenzen</a></li><li><a href="./karriere.html">Karriere</a></li><li><a href="./services.html">Services</a></li><li><a href="./kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>UNSERE LEISTUNGEN</h3>
+        <ul>
+          <li>Medical Writing</li><li>Medical Affairs</li><li>Medical Graphics</li><li>Medical Education</li><li>Medical Liaison</li><li>Medical Marketing</li>
+        </ul>
+      </div>
+      <div>
+        <h3>RECHTLICHE HINWEISE</h3>
+        <ul>
+          <li><a href="./kontakt.html">AGB</a></li><li><a href="./kontakt.html">Impressum</a></li><li><a href="./kontakt.html">Datenschutz</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>CONNECT</h3>
+        <p>LinkedIn · Xing · YouTube</p>
+        <p>Brands: MedOne · BioPulse</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">© 2026 Relaunch Co Medical. Alle Rechte vorbehalten.</div>
+  </footer>
+
+  <script src="./scripts/main.js"></script>
+</body>
 </html>
