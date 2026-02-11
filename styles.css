@@ -20,6 +20,10 @@ body {
   background: var(--bg);
 }
 
+a {
+  color: inherit;
+}
+
 .top-bar {
   background: var(--navy);
   color: #fff;
@@ -53,11 +57,52 @@ body {
   max-width: 1500px;
 }
 
+.home-layout {
+  max-width: 1200px;
+  padding: 92px 28px 72px;
+}
+
+.home-hero {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 26px;
+  padding: 42px;
+  box-shadow: 0 6px 16px rgba(31, 53, 96, 0.07);
+}
+
+.home-kicker {
+  margin: 0 0 12px;
+  color: var(--orange);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.home-copy {
+  margin: 0 0 26px;
+  max-width: 900px;
+  font-size: 31px;
+  line-height: 1.35;
+}
+
+.services-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
 h1 {
   margin: 0 0 24px;
   color: var(--text);
   font-size: 58px;
   line-height: 1.1;
+}
+
+.services-header h1 {
+  margin-bottom: 0;
 }
 
 .services-grid {
@@ -151,6 +196,26 @@ h1 {
     font-size: 48px;
   }
 
+  .home-copy,
+  .product-card p,
+  .product-card ul {
+    font-size: 28px;
+  }
+
+  .product-kicker {
+    font-size: 18px;
+  }
+
+  .product-subline {
+    font-size: 24px;
+  }
+
+  .product-columns h2,
+  .related-services h2,
+  .detail-chip {
+    font-size: 22px;
+  }
+
   .services-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -161,9 +226,7 @@ h1 {
 
   .service-card p,
   .service-btn,
-  .back-link,
-  .product-card p,
-  .product-card ul {
+  .back-link {
     font-size: 28px;
   }
 }
@@ -181,8 +244,27 @@ h1 {
   }
 
   .services-layout,
+  .home-layout,
   .product-main {
     padding: 40px 16px;
+  }
+
+  .home-hero {
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+
+  .home-kicker {
+    font-size: 17px;
+  }
+
+  .home-copy {
+    font-size: 22px;
+  }
+
+  .services-header {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   h1 {
@@ -261,22 +343,6 @@ h1 {
   border-color: #ffc78f;
   color: #b54a00;
   font-weight: 700;
-}
-
-@media (max-width: 1200px) {
-  .product-kicker {
-    font-size: 18px;
-  }
-
-  .product-subline {
-    font-size: 24px;
-  }
-
-  .product-columns h2,
-  .related-services h2,
-  .detail-chip {
-    font-size: 22px;
-  }
 }
 
 @media (max-width: 900px) {
